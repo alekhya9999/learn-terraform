@@ -4,6 +4,6 @@ resource "aws_instance" "ec2" {
   vpc_security_group_ids = ["sg-0a6f9986a7f6c10cd"]
   tags = {
     Name = "test"
-  }
+   }
 
 }
