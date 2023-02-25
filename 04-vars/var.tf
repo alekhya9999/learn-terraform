@@ -12,3 +12,11 @@ output "sample1" {
   value = var.sample1
 }
 
+variable "sample2" {}
+
+output "sample2" {
+  value = var.sample2
+}
+
+
+
