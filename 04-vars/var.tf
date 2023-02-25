@@ -11,7 +11,6 @@ variable "sample1" {}
 output "sample1" {
   value = var.sample1
 }
-
 variable "sample2" {}
 
 output "sample2" {
