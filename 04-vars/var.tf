@@ -28,22 +28,24 @@ variable "sample5" {
   default = "Hello"
 }
 variable "sample6" {
-  default = ["Hello",
-             1000,
-             true,
-             "world"]
+  default =  [
+    "Hello",
+    1000,
+    true,
+    "World"
+  ]
 }
 variable "sample7" {
-  default = {
-     string = "Hello",
-     number = 10,
-     boolean = true
+  default =  {
+    string = "Hello",
+    number = 100,
+    boolean = true
   }
 }
-
 output "types" {
-  value = "variable.sample5 - ${var.sample5}"
-  first value in list - "variable.sample6 - ${var.sample6[0]}"
-   Boolean value of map - "vaiable.sample7 - ${var.sample7[boolean]}"
+  value = "Variable sample5 - ${var.sample5}, First value in list - ${var.sample6[0]}, Boolean Value of Map = ${var.sample7["boolean"]}"
 }
+
+
+
 
