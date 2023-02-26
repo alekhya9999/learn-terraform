@@ -6,4 +6,5 @@ resource "aws_spot_instance_request" "spotrequest" {
   tags = {
     Name = "spotrequest"
   }
+
 }
