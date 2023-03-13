@@ -167,5 +167,5 @@ resource "aws_route53_record" "dispatch" {
 }
 
 output "rabbitmq" {
-  value = aws_instance.rabbitmq.public_ip
+  value = "Public IP address = ${aws_instance.rabbitmq.public_ip}"
 }
