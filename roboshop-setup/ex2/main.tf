@@ -10,18 +10,18 @@ resource "aws_instance" "frontend" {
   instance_type          = each.value["type"]
   vpc_security_group_ids = ["sg-0a6f9986a7f6c10cd"]
     tags    = {
-    name  = each.value["Name"]
+    Name  = each.value["Name"]
   }
 
 }
 variable "instances" {
   default = {
     catalogue = {
-      name = "catalogue"
+      Name = "catalogue"
       type = "t3.micro"
     }
     user = {
-      name = "user"
+      Name = "user"
       type = "t3.small"
     }
     }
