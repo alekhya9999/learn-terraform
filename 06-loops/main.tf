@@ -1,3 +1,5 @@
 variable "d1" {
-  default = s
+  default = 5
 }
+
+resource "null_resource" "nothing" {}
