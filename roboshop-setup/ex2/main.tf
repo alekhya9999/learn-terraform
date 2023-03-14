@@ -13,5 +13,5 @@ variable "instances" {
   default = ["cart","catalogue","user","payment","shipping"]
 }
 output "public_ip" {
-  value = ""
+  value = aws_instance.frontend.*.public_ip
 }
